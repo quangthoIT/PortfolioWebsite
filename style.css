@@ -428,3 +428,87 @@ body {
   background: #f94b4b;
   transform: translateY(-10px);
 }
+/* ----------Projects---------- */
+#projects {
+  padding-top: 50px;
+}
+#projects .container {
+  padding: 20px 10%;
+}
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.work:hover img {
+  transform: scale(1.1);
+}
+.work:hover .layer {
+  height: 100%;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #f94b4b);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.7s;
+}
+.layer h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #f94b4b;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #f94b4b;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.5s;
+  font-size: 18px;
+}
+.btn:hover {
+  background: #f94b4b;
+}
+.btn:active {
+  transform: scale(0.95);
+}
