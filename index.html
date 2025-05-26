@@ -6,6 +6,12 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e46f3fba89.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
   </head>
   <body>
     <!-- ----------Header---------- -->
@@ -24,6 +30,257 @@
         <div class="header-text">
           <p>Welcome to My Portfolio</p>
           <h2>Hello, It's Me <br /><span class="full-name"></span></h2>
+        </div>
+      </div>
+    </div>
+    <!-- ----------About---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/Picture.jpg" alt="Picture" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="about-text">
+              I'm a third-year Information Technology student at Ho Chi Minh
+              City University of Transport. I'm a frontend enthusiast with a
+              strong passionfor building responsive websites and clean user
+              interfacesfor both web and mobile applications.I constantly strive
+              to improve my skills through self-learning and handson projects.
+              Currently, I'm seekinginternship opportunities where I canapply
+              what I've learned,gain real-world experienceand grow as a
+              developer in a professional environment. <br />To me
+              <i
+                >"Success is not a destination, but ajourney built on passion
+                and perseverance."</i
+              >
+            </p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab(event, 'education')"
+              >
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab(event, 'technical-skills')">
+                Technical Skills
+              </p>
+              <p
+                class="tab-links"
+                onclick="opentab(event,'pofessional-skills')"
+              >
+                Professional Skills
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span>2022 - Present</span><br /><b>
+                    Ho Chi Minh City University of Transport</b
+                  >
+                  <br />
+                  <i
+                    >Major: Information Technology<br />
+                    GPA: 3.74 / 4.0</i
+                  >
+                </li>
+                <li><span>2019 - 2022</span><br />Phu Cat No.2 High School</li>
+                <li><span>2015 - 2019</span><br />Cat Minh Secondary School</li>
+                <li>
+                  <span>2010 - 2015</span><br />Cat Minh No.3 Primary School
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="technical-skills">
+              <div class="technical-bars">
+                <div class="bar">
+                  <div class="info">
+                    <i class="bx bxl-html5" style="color: #e44d26"></i>
+                    <span>HTML</span>
+                  </div>
+                  <div class="progress-line html">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <i class="bx bxl-css3" style="color: #264de4"></i>
+                    <span>CSS</span>
+                  </div>
+                  <div class="progress-line css">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <i class="bx bxl-javascript" style="color: #f7df1e"></i>
+                    <span>JavaScript</span>
+                  </div>
+                  <div class="progress-line javascript">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <i class="bx bxl-c-plus-plus" style="color: #00599c"></i>
+                    <span>C++</span>
+                  </div>
+                  <div class="progress-line cplusplus">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <i class="bx bxl-python" style="color: #306998"></i>
+                    <span>Python</span>
+                  </div>
+                  <div class="progress-line python">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <i class="bx bxl-java" style="color: #f89820"></i>
+                    <span>Java</span>
+                  </div>
+                  <div class="progress-line java">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <i class="bx bxl-react" style="color: #61dafb"></i>
+                    <span>React JS</span>
+                  </div>
+                  <div class="progress-line reactjs">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="info">
+                    <i class="bx bxl-android" style="color: #3ddc84"></i>
+                    <span>Android Studio</span>
+                  </div>
+                  <div class="progress-line android">
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-contents" id="pofessional-skills">
+              <div class="radial-bars">
+                <div class="radial-bar">
+                  <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle
+                      class="progress-bar"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                    <circle
+                      class="path path-1"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                  </svg>
+                  <div class="percentage">80%</div>
+                  <div class="text">Teamwork</div>
+                </div>
+                <div class="radial-bar">
+                  <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle
+                      class="progress-bar"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                    <circle
+                      class="path path-2"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                  </svg>
+                  <div class="percentage">70%</div>
+                  <div class="text">Creativity</div>
+                </div>
+                <div class="radial-bar">
+                  <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle
+                      class="progress-bar"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                    <circle
+                      class="path path-3"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                  </svg>
+                  <div class="percentage">90%</div>
+                  <div class="text">Careful</div>
+                </div>
+                <div class="radial-bar">
+                  <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle
+                      class="progress-bar"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                    <circle
+                      class="path path-4"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                  </svg>
+                  <div class="percentage">70%</div>
+                  <div class="text">Communicate</div>
+                </div>
+                <div class="radial-bar">
+                  <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle
+                      class="progress-bar"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                    <circle
+                      class="path path-5"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                  </svg>
+                  <div class="percentage">75%</div>
+                  <div class="text">Problem Solving</div>
+                </div>
+                <div class="radial-bar">
+                  <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle
+                      class="progress-bar"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                    <circle
+                      class="path path-6"
+                      cx="100"
+                      cy="100"
+                      r="80"
+                    ></circle>
+                  </svg>
+                  <div class="percentage">85%</div>
+                  <div class="text">Adaptability</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

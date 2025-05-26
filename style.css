@@ -72,3 +72,317 @@ body {
 .header-text h2 span {
   color: #f94b4b;
 }
+/* ----------About---------- */
+#about {
+  padding: 80px 0;
+  color: #fff;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+.about-col-2 {
+  flex-basis: 60%;
+}
+.about-col-2 .about-text {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: justify;
+}
+.sub-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+.tab-titles {
+  display: flex;
+  margin: 15px 0 25px;
+}
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #f94b4b;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 50%;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  animation: slideTop 0.5s ease-out forwards;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.tab-contents ul li span {
+  color: #f94b4b;
+  margin-right: 10px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+/* ----------Technical Skills---------- */
+.technical-bars .bar {
+  margin-bottom: 10px;
+}
+.technical-bars .bar .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1px;
+}
+.technical-bars .bar .info i {
+  font-size: 28px;
+}
+.technical-bars .bar .info span {
+  line-height: 1;
+  font-size: 15px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+}
+.technical-bars .bar .progress-line {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: #262626;
+  border-radius: 10px;
+  animation: animate 1s cubic-bezier(0.5, 0.1, 0.25, 1) forwards;
+  transform-origin: left;
+}
+.technical-bars .bar .progress-line span {
+  position: absolute;
+  height: 100%;
+  background-color: #f94b4b;
+  border-radius: 10px;
+  transform: scaleX(0);
+  animation: animate 1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  transform-origin: left;
+}
+.progress-line.html span {
+  width: 80%;
+}
+.progress-line.css span {
+  width: 75%;
+}
+.progress-line.javascript span {
+  width: 65%;
+}
+.progress-line.cplusplus span {
+  width: 80%;
+}
+.progress-line.python span {
+  width: 70%;
+}
+.progress-line.java span {
+  width: 60%;
+}
+.progress-line.reactjs span {
+  width: 65%;
+}
+.progress-line.android span {
+  width: 60%;
+}
+.progress-line span::after {
+  position: absolute;
+  padding: 2px 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 5px;
+  top: -30px;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+.progress-line.html span::after {
+  content: "80%";
+}
+.progress-line.css span::after {
+  content: "75%";
+}
+.progress-line.javascript span::after {
+  content: "65%";
+}
+.progress-line.cplusplus span::after {
+  content: "80%";
+}
+.progress-line.python span::after {
+  content: "70%";
+}
+.progress-line.java span::after {
+  content: "60%";
+}
+.progress-line.reactjs span::after {
+  content: "65%";
+}
+.progress-line.android span::after {
+  content: "60%";
+}
+.progress-line span::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #262626;
+  top: -10px;
+  right: 0;
+  animation: showText 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes showText {
+  100% {
+    opacity: 1;
+  }
+}
+/* ----------Professional Skills---------- */
+.radial-bars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.radial-bars .radial-bar {
+  width: 30%;
+  height: 170px;
+  position: relative;
+}
+.radial-bars .radial-bar svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 130px;
+  height: 130px;
+}
+.radial-bars .progress-bar {
+  stroke-width: 10;
+  stop-color: #262626;
+  fill: transparent;
+  stroke-dashoffset: 502;
+  stroke-dasharray: 502;
+  stroke-linecap: round;
+  animation: animate-bar 0.5s linear forwards;
+}
+.path {
+  stroke: #f94b4b;
+  stroke-width: 10;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+.path-1 {
+  animation: animate-path1 0.5s 0.5s linear forwards;
+}
+.path-2 {
+  animation: animate-path2 0.5s 0.5s linear forwards;
+}
+.path-3 {
+  animation: animate-path3 0.5s 0.5s linear forwards;
+}
+.path-4 {
+  animation: animate-path4 0.5s 0.5s linear forwards;
+}
+.path-5 {
+  animation: animate-path5 0.5s 0.5s linear forwards;
+}
+.path-6 {
+  animation: animate-path6 0.5s 0.5s linear forwards;
+}
+.radial-bar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+.radial-bar .text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 50%;
+  top: 90%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 0;
+}
+@keyframes animate-bar {
+  100% {
+    stroke-dashoffset: -1;
+  }
+}
+@keyframes animate-path1 {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+@keyframes animate-path2 {
+  100% {
+    stroke-dashoffset: 150;
+  }
+}
+@keyframes animate-path3 {
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+@keyframes animate-path4 {
+  100% {
+    stroke-dashoffset: 150;
+  }
+}
+@keyframes animate-path5 {
+  100% {
+    stroke-dashoffset: 125;
+  }
+}
+@keyframes animate-path6 {
+  100% {
+    stroke-dashoffset: 75;
+  }
+}
