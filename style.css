@@ -658,6 +658,7 @@ form .btn.btn2 {
     display: block;
     font-size: 30px;
     padding: 0 15px;
+    cursor: pointer;
   }
   .navbar ul {
     background: #f94b4b;
@@ -719,12 +720,14 @@ form .btn.btn2 {
   .radial-bar .text {
     font-size: 14px;
     bottom: -10px;
-    transform: translateX(-40px);
-    left: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: max-content;
   }
   .work-list,
   .extra-projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .contact-left,
   .contact-right {
