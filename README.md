@@ -13,11 +13,11 @@ This is the personal portfolio website of Nguyen Quang Tho, a student majoring i
 ## 📌 Main Sections
 
 - **Home** – Landing section
-- **About Me** – Personal information
+- **About Me**
+  - Personal information
   - Education
   - Technical Skills
   - Professional Skills
-  - General Skill Overview
 - **Services** – Services offered
 - **Projects** – Completed personal projects
 - **Contact** – Contact information and message form
@@ -42,5 +42,5 @@ This is the personal portfolio website of Nguyen Quang Tho, a student majoring i
 
 ## 🙏 Acknowledgment
 
-Thank you for taking the time to visit my portfolio.  
+Thank you for taking the time to visit my portfolio.
 I hope you have a great experience here!
