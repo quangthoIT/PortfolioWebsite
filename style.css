@@ -727,7 +727,7 @@ form .btn.btn2 {
   }
   .work-list,
   .extra-projects {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   .contact-left,
   .contact-right {
