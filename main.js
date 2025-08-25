@@ -50,3 +50,17 @@ function openmenu() {
 function closemenu() {
   sidemenu.style.right = "-150px";
 }
+
+// Xử lý See More / See Less button
+const seeMoreBtn = document.getElementById("seeMoreBtn");
+const extraProjects = document.querySelector(".extra-projects");
+let expanded = false;
+seeMoreBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  expanded = !expanded;
+  extraProjects.classList.toggle("show", expanded);
+  seeMoreBtn.textContent = expanded ? "See Less" : "See More";
+});
+
+
+

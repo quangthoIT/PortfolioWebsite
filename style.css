@@ -80,11 +80,13 @@ body {
   padding: 80px 0;
   color: #fff;
 }
+#about .container {
+  padding: 50px 10%;
+}
 .row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  align-items: center;
 }
 .about-col-1 {
   flex-basis: 35%;
@@ -98,13 +100,14 @@ body {
 }
 .about-col-2 .about-text {
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.3;
   text-align: justify;
 }
 .sub-title {
   font-size: 50px;
   font-weight: 600;
   color: #fff;
+  margin-bottom: 20px;
 }
 .tab-titles {
   display: flex;
@@ -133,6 +136,7 @@ body {
 .tab-contents ul li {
   list-style: none;
   margin: 10px 0;
+  line-height: 1.5;
   animation: slideTop 0.5s ease-out forwards;
   opacity: 0;
   transition: all 0.3s ease-in-out;
@@ -165,7 +169,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 1px;
+  margin-bottom: 5px;
 }
 .technical-bars .bar .info i {
   font-size: 28px;
@@ -179,7 +183,7 @@ body {
 .technical-bars .bar .progress-line {
   position: relative;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: #262626;
   border-radius: 10px;
   animation: animate 1s cubic-bezier(0.5, 0.1, 0.25, 1) forwards;
@@ -195,28 +199,28 @@ body {
   transform-origin: left;
 }
 .progress-line.html span {
-  width: 80%;
+  width: 85%;
 }
 .progress-line.css span {
-  width: 75%;
+  width: 80%;
 }
 .progress-line.javascript span {
-  width: 65%;
+  width: 75%;
 }
 .progress-line.cplusplus span {
-  width: 80%;
+  width: 75%;
 }
 .progress-line.python span {
   width: 70%;
 }
-.progress-line.java span {
-  width: 60%;
-}
 .progress-line.reactjs span {
-  width: 65%;
+  width: 80%;
+}
+.progress-line.tailwind span {
+  width: 80%;
 }
 .progress-line.android span {
-  width: 60%;
+  width: 70%;
 }
 .progress-line span::after {
   position: absolute;
@@ -231,28 +235,28 @@ body {
   opacity: 0;
 }
 .progress-line.html span::after {
-  content: "80%";
+  content: "85%";
 }
 .progress-line.css span::after {
-  content: "75%";
+  content: "80%";
 }
 .progress-line.javascript span::after {
-  content: "65%";
+  content: "75%";
 }
 .progress-line.cplusplus span::after {
-  content: "80%";
+  content: "75%";
 }
 .progress-line.python span::after {
   content: "70%";
 }
-.progress-line.java span::after {
-  content: "60%";
-}
 .progress-line.reactjs span::after {
-  content: "65%";
+  content: "80%";
+}
+.progress-line.tailwind span::after {
+  content: "80%";
 }
 .progress-line.android span::after {
-  content: "60%";
+  content: "70%";
 }
 .progress-line span::before {
   content: "";
@@ -433,16 +437,17 @@ body {
 }
 /* ----------Projects---------- */
 #projects {
-  padding-top: 50px;
+  padding-top: 40px;
 }
 #projects .container {
-  padding: 20px 10%;
+  padding: 50px 10%;
 }
-.work-list {
+.work-list,
+.extra-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 .work {
   border-radius: 10px;
@@ -515,7 +520,29 @@ body {
 .btn:active {
   transform: scale(0.95);
 }
+
+.hidden-projects {
+  display: none;
+  margin-top: 50px;
+}
+.hidden-projects.show {
+  display: grid;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* ----------Contact---------- */
+#contact .row {
+  margin: 50px 0;
+}
 .contact-left {
   flex-basis: 40%;
 }
@@ -560,7 +587,6 @@ body {
   transform: scale(1.05);
 }
 .contact-right form {
-  margin-top: 30px;
   width: 100%;
 }
 form input,
@@ -574,6 +600,17 @@ form textarea {
   background: #262626;
   color: #fff;
   font-size: 16px;
+}
+form input:focus,
+form textarea:focus {
+  border-color: #f94b4b;
+  background: #101820;
+  box-shadow: 0 0 5px rgba(249, 75, 75, 0.6);
+}
+form textarea {
+  resize: none;
+  min-height: 100px;
+  line-height: 1.5;
 }
 form .btn.btn2 {
   margin-top: 20px;
@@ -684,6 +721,10 @@ form .btn.btn2 {
     bottom: -10px;
     transform: translateX(-40px);
     left: 30%;
+  }
+  .work-list,
+  .extra-projects {
+    grid-template-columns: 1fr;
   }
   .contact-left,
   .contact-right {
