@@ -77,7 +77,7 @@ body {
 }
 /* ----------About---------- */
 #about {
-  padding: 80px 0;
+  padding: 50px 0;
   color: #fff;
 }
 #about .container {
@@ -134,12 +134,18 @@ body {
   width: 50%;
 }
 .tab-contents ul li {
+  font-size: 16px;
   list-style: none;
   margin: 10px 0;
   line-height: 1.5;
   animation: slideTop 0.5s ease-out forwards;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+}
+.tab-contents ul li span {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 700;
 }
 @keyframes slideTop {
   0% {
