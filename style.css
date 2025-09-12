@@ -451,11 +451,10 @@ body {
 #projects .container {
   padding: 50px 10%;
 }
-.work-list,
-.extra-projects {
+.work-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 50px;
   margin-top: 80px;
 }
 .work {
@@ -535,15 +534,6 @@ body {
 }
 .btn:active {
   transform: scale(1.05);
-}
-
-.hidden-projects {
-  display: none;
-  margin-top: 50px;
-}
-.hidden-projects.show {
-  display: grid;
-  animation: fadeIn 0.5s ease-in-out;
 }
 .fade-in {
   animation: fadeIn 0.5s ease-in-out;
@@ -751,8 +741,7 @@ form .btn.btn2 {
     text-align: center;
     width: max-content;
   }
-  .work-list,
-  .extra-projects {
+  .work-list {
     grid-template-columns: 1fr;
   }
   .contact-left,
