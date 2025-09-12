@@ -52,15 +52,37 @@ function closemenu() {
 }
 
 // Xử lý See More / See Less button
+// Xử lý See More theo từng nhóm 3 project
+const projects = document.querySelectorAll(".main-projects .work");
 const seeMoreBtn = document.getElementById("seeMoreBtn");
-const extraProjects = document.querySelector(".extra-projects");
-let expanded = false;
+
+let visibleCount = 3; // mặc định hiện 3 cái đầu
+
+// Ẩn tất cả project ngoài 3 cái đầu
+projects.forEach((project, index) => {
+  if (index >= visibleCount) {
+    project.style.display = "none";
+  }
+});
+
 seeMoreBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  expanded = !expanded;
-  extraProjects.classList.toggle("show", expanded);
-  seeMoreBtn.textContent = expanded ? "See Less" : "See More";
+
+  // Hiện thêm 3 project tiếp theo
+  const nextCount = visibleCount + 3;
+  for (let i = visibleCount; i < nextCount && i < projects.length; i++) {
+    projects[i].style.display = "block";
+  }
+  visibleCount = nextCount;
+
+  // Nếu hiện hết thì ẩn nút See More
+  if (visibleCount >= projects.length) {
+    seeMoreBtn.style.display = "none";
+  }
 });
+
+
+
 
 
 
