@@ -690,6 +690,7 @@ form .btn.btn2 {
     height: auto;
   }
 
+
   .services-list div {
     padding: 20px 25px;
   }
@@ -712,26 +713,24 @@ form .btn.btn2 {
     margin-top: 80px;
   }
 
-  #contact .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .contact-left {
-    flex: 0 0 45%;
-    max-width: 45%;
-  }
-  .contact-left p {
-    font-size: 16px;
-    margin-bottom: 12px;
-  }
-  .contact-left i {
-    font-size: 24px;
+  .contact-left{
+    flex-basis: 100%;
   }
   .contact-right {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex-basis: 100%;
+  }
+  .contact-left i {
+    font-size: 28px;
+  }
+  .contact-left p {
+    margin: 15px 0;
+    font-size: 18px;
+  }
+  .contact-social {
+    margin-top: 20px;
+  }
+  .contact-left {
+    margin-bottom: 20px;
   }
 
   form input,
@@ -747,7 +746,7 @@ form .btn.btn2 {
 
   .copyright {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -764,7 +763,7 @@ form .btn.btn2 {
 
   #header {
     background-image: url(./images/Background-Phone.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
