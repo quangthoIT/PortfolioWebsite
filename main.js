@@ -48,7 +48,7 @@ function openmenu() {
   sidemenu.style.right = "0";
 }
 function closemenu() {
-  sidemenu.style.right = "-150px";
+  sidemenu.style.right = "-100%";
 }
 
 // Xử lý See More / See Less button
