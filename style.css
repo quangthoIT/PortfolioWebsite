@@ -168,7 +168,7 @@ body {
 }
 /* ----------Technical Skills---------- */
 .technical-bars .bar {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .technical-bars .bar .info {
   display: flex;
@@ -408,7 +408,7 @@ body {
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
+  grid-gap: 30px;
   margin-top: 80px;
 }
 .services-list div {
@@ -485,20 +485,21 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 40px;
-  text-align: center;
-  font-size: 14px;
+  padding: 0 25px;
+  text-align: justify;
+  font-size: 16px;
   transition: all 0.7s;
 }
 .layer h3 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 22px;
+  font-weight: semibold;
   margin-bottom: 20px;
   text-transform: capitalize;
+  line-height: 1.4;
 }
 .layer a {
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 16px;
   color: #f94b4b;
   text-decoration: none;
   border-radius: 50%;
@@ -509,6 +510,11 @@ body {
   text-align: center;
 }
 .layer p {
+  line-height: 1.4;
+}
+.layer span {
+  margin-top: 10px;
+  font-style: italic;
   line-height: 1.4;
 }
 .btn {
@@ -690,7 +696,6 @@ form .btn.btn2 {
     height: auto;
   }
 
-
   .services-list div {
     padding: 20px 25px;
   }
@@ -702,7 +707,7 @@ form .btn.btn2 {
     font-weight: bold;
   }
   .services-list div p {
-    font-size: 18px;
+    font-size: 16px;
     color: #f2f2f2;
   }
 
@@ -713,7 +718,7 @@ form .btn.btn2 {
     margin-top: 80px;
   }
 
-  .contact-left{
+  .contact-left {
     flex-basis: 100%;
   }
   .contact-right {
@@ -875,7 +880,7 @@ form .btn.btn2 {
     font-weight: bold;
   }
   .services-list div p {
-    font-size: 16px;
+    font-size: 18px;
     color: #f2f2f2;
   }
 
