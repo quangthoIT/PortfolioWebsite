@@ -51,7 +51,6 @@ function closemenu() {
   sidemenu.style.right = "-100%";
 }
 
-// Xử lý See More / See Less button
 // Xử lý See More theo từng nhóm 3 project
 const projects = document.querySelectorAll(".main-projects .work");
 const seeMoreBtn = document.getElementById("seeMoreBtn");
